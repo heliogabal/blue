@@ -53,7 +53,8 @@ $desk: 70em 16; // At 70em use 16 columns.
     width: 250px;
   }
   .l-region--header{
-    @include span-columns(8 omega, 12); // Span the last (omega) 8 columns of 12.
+    //@include span-columns(8 omega, 12); // Span the last (omega) 8 columns of 12.
+    width: auto;
   }
   .l-region--navigation {
     clear: both;
@@ -88,7 +89,8 @@ $desk: 70em 16; // At 70em use 16 columns.
     width: 250px;
   }
   .l-region--header{
-    @include span-columns(10 omega, 16); // Span the last (omega) 10 columns of 16.
+    //@include span-columns(10 omega, 16); // Span the last (omega) 10 columns of 16.
+    width: auto;
   }
 
   .sidebar-first {
