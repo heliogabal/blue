@@ -1,0 +1,765 @@
+/*******************************************************************************
+ * style.scss
+ *
+ * This file shouldn't directly contain any SCSS code, instead it only serves to
+ * combine the SCSS contained in other Sass partials through @import directives.
+ *
+ * BASE............Styling for common HTML and Drupal elements.
+ * LAYOUT..........Styles for the page structure that contain components.
+ * COMPONENTS......Components, their modifiers and sub-components.
+ ******************************************************************************/
+/*******************************************************************************
+ * _utils.scss
+ *
+ * Sass offers come very useful features, these include variables functions and
+ * mixins. Extensions such as Compass and Susy can also be used to provide extra
+ * functions and mixins to be used throughout the theme. This file acts as a
+ * single place for defining these things, which can then be accessed by
+ * importing _utils.scss where required. The following should be defined in this
+ * file:
+ * - Custom Sass mixins for the theme.
+ * - Custom Sass functions for the theme.
+ * - Overriding the default variables provided by extensions such as Compass.
+ * - Defining new variables for:
+ *      - Colors.
+ *      - Font sizes and families.
+ *      - Layout and grid sizing.
+ ******************************************************************************/
+/* apply a natural box layout model to all elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_utils\.scss}line{font-family:\0000320}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*******************************************************************************
+<<<<<<< HEAD
+ * _base.scss
+ *
+ * Base styles define the default look for HTML and common Drupal elements.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common Drupal elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupal's common elements for styling. By setting a solid baseline
+=======
+ * _base.scss
+
+ * Base styles define the default look for HTML and common Drupal elements.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common Drupal elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupals common elements for styling. By setting a solid baseline
+>>>>>>> sandbox/7.x-4.x
+ * before adding any more specific customisations you ensure that as any new
+ * features are added they will be correctly styled without any extra work.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000329}}
+body {
+  line-height: 1.625;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3f3f3f;
+  /* http://www.flickr.com/photos/patdami/9261365287/sizes/o/ */
+  /* background: url(../images/blue.jpg) bottom left no-repeat $body;*/
+  background: #c2d4ec;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000337}}
+a {
+  text-decoration: none;
+  color: #1400a0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000341}}
+a:hover {
+  color: #107fc9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000344}}
+a img {
+  border: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000348}}
+p {
+  -ms-word-break: break-word;
+  word-break: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+  hyphenate-character: "\2010";
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-before: 3;
+  hyphenate-before: 3;
+  hyphenate-after: 3;
+  hyphenate-lines: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000351}}
+strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000354}}
+.pane-unfairtobacco-feed strong {
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000358}}
+h1 {
+  font-size: 2em;
+  line-height: 1.21875;
+  color: #5f5f5f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000363}}
+h2 {
+  font-size: 1.5em;
+  line-height: 1.0833;
+  color: #5f5f5f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000369}}
+h3 {
+  font-size: 1.17em;
+  color: #5f5f5f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000373}}
+h5 {
+  font-size: .83em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000376}}
+h6 {
+  font-size: .75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000379}}
+.front h2.title {
+  margin-bottom: .3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000382}}
+h2.pane-title {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000385}}
+h2.block__title {
+  margin: 0;
+}
+
+/* Block elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000390}}
+header, hgroup, footer, section, article, aside {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000394}}
+.block--menu ul {
+  padding: 0;
+  margin: 1.4em .6em 0;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\0000399}}
+.block--menu li {
+  list-style: none !important;
+  float: left;
+  margin: 0 0 2.2em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\00003103}}
+.block--menu li a {
+  padding: 1em;
+  text-decoration: none;
+  margin-right: 1px;
+  background: #eaeaea;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_base\.scss}line{font-family:\00003111}}
+.block--menu li a:hover, .block--menu li a.active {
+  background-color: #1400a0;
+  color: white;
+}
+
+/*******************************************************************************
+ * _layout.scss
+ *
+ * The layout of the major regions (usually, but not necessarily Drupal regions)
+ * that components will be placed within. Layout styles for the theme's
+ * components should not be placed here and should instead be kept with the
+ * relevant SCSS for that component.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000310}}
+.l-page {
+  max-width: 1100px;
+  margin: 3em auto;
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000315}}
+.l-header, .l-main, l-footer {
+  padding: 1em;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000319}}
+.l-region--header {
+  width: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000322}}
+.l-branding {
+  width: 250px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000324}}
+.l-branding img {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000328}}
+.l-main {
+  padding: 0 1.5em 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000331}}
+.block--menu ul {
+  margin: 1.4em .6em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000334}}
+.l-region--sidebar-first, .l-region--sidebar-second {
+  margin-bottom: 0;
+}
+
+/*#search-block-form {
+    float:right;
+}
+#socialshareprivacy-block {
+    float:left;
+}*/
+/* Startseite */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000346}}
+.panel-2col-stacked .panel-col-first .inside {
+  margin: 0 1em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000349}}
+.panel-2col-stacked .panel-col-last .inside {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000353}}
+.panel-2col-stacked .views-row:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-device-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000358}}
+  body {
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000361}}
+  .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000365}}
+  .l-main {
+    padding: 0;
+    margin: .5em .5em 0 .5em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000369}}
+  .l-header {
+    margin: 0 .5em .5em;
+    padding: 1em 0 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000373}}
+  .l-branding {
+    width: 100%;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000377}}
+  aside .block:last-child {
+    margin-bottom: 1em !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000380}}
+  .panel-2col-stacked .panel-col-first {
+    float: none;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000384}}
+  .panel-2col-stacked .panel-col-first .inside {
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000387}}
+  .panel-2col-stacked .panel-col-last {
+    float: none;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000391}}
+  .panel-2col-stacked .panel-col-last .inside {
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000394}}
+  .panel-2col-stacked .views-row:last-child {
+    margin-bottom: 1.5em;
+  }
+}
+@media screen and (min-device-width: 641px) and (max-device-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\0000399}}
+  .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003103}}
+  .l-region--header {
+    float: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003106}}
+  .panel-2col-stacked .panel-col-first, .panel-2col-stacked .panel-col-last {
+    float: left;
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003110}}
+  aside .block {
+    width: 48%;
+    margin: 1em 2% 0 0 !important;
+    float: left;
+  }
+}
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003117}}
+  .sidebar-first .l-content,
+  .sidebar-second .l-content,
+  .two-sidebars .l-content {
+    width: 76.1017%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003122}}
+  .sidebar-first .l-region--sidebar-first,
+  .sidebar-first .l-region--sidebar-second,
+  .sidebar-second .l-region--sidebar-first,
+  .sidebar-second .l-region--sidebar-second,
+  .two-sidebars .l-region--sidebar-first,
+  .two-sidebars .l-region--sidebar-second {
+    width: 22.2034%;
+  }
+}
+@media screen and (max-width: 1050px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_layout\.scss}line{font-family:\00003132}}
+  body {
+    font-size: 14px !important;
+  }
+}
+/*******************************************************************************
+ * _components.scss
+ *
+ * Imports more partials that contain full components (modules in SMACSS), their
+ * sub-components and modifiers.
+ *
+ * Components are discrete parts of your page that should sit within the regions
+ * of your layouts. You should try to abstract your components as much as
+ * possible to promote reuse throughout the theme. Components should be flexible
+ * enough to respond to any width and should never rely on context
+ * (e.g. .sidebar-first .component) for styling. This allows modules to be
+ * placed throughout the theme with no risk of them breaking.
+ *
+ * If you find you need to change the look of a component depending on it's
+ * context you should avoid using context based classes at all costs. Instead it
+ * is better to add another "modifier" class to the component to alter the
+ * styling. Again, this promotes reuse.
+ *
+ * Sub-components are the individual parts that make up a component. As a
+ * general rule, adding a class to target a sub-component is a much better
+ * option than using descendant selectors or element selectors. In many cases
+ * sub-components can be made more reusable by making them components in their
+ * own right, so they can then be used within other components.
+ *
+ * Almost everything that doesn't belong in base should be made a component.
+ * Here's some common examples throughout Drupal:
+ *
+ * - Blocks
+ * - Content Types - For example, you may have a generic node component that
+ *      contains sub-components for the submitted by line and links. Specific
+ *      components can then be created for each content type to style the
+ *      specifics of each. Finally, by using entity view modes you can easily
+ *      apply modifications based on the .node-[view-mode] classes.
+ * - Forms - For instance the log in form.
+ * - Views - Each views output style could be made into a component, the content
+ *       of each row should be provided my a view mode styled by it's component
+ *       CSS. Exposed filter forms, views pagers and other views elements are
+ *       also good candidates for components.
+ ******************************************************************************/
+/* Blog Pics */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000342}}
+.page-node .caption:first-of-type img {
+  float: left;
+  margin: .5em 1em 0 0;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000348}}
+.page-node #content-wrap img {
+  border: 1px solid #CCCCCC;
+  height: auto;
+  margin: 0.5em 1em 0.5em 0;
+  max-width: 97.4%;
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000355}}
+.node-teaser img {
+  border: 1px solid #CCCCCC;
+  float: left;
+  height: auto;
+  margin: 1.5em 1em 0 0;
+  max-width: 97.4%;
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000363}}
+.node--publikation--teaser img {
+  float: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000366}}
+.field--name-field-untertitel {
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000370}}
+.node-type-publikation .caption p {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000375}}
+.node-type-publikation .l-content .field--name-field-titelbild {
+  margin-right: 1em;
+  margin-top: 1em;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000380}}
+.field--name-field-herausgeber, .field--name-field-jahr, .field--name-field-ort, .field--name-field-isbn {
+  float: left;
+  margin-right: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000384}}
+.caption p {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000392}}
+.pane-unfairtobacco-feed .caption p {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\0000395}}
+.left {
+  float: left;
+  margin-right: 1em;
+  margin-top: -1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003100}}
+.panel-2col-stacked .views-row, .not-front .l-content {
+  background: #eaeaea;
+  /*border-radius:3px;*/
+  padding: 0 1em 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003107}}
+.not-front .l-content {
+  padding: 0 3em 1em;
+  max-width: 42.8125em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003111}}
+.node-readmore, .print_html, .print_mail {
+  margin-left: 0;
+  margin-top: 1em;
+  font-size: .9em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003115}}
+.node-readmore a, .print_html a, .print_mail a {
+  padding: .4em 1em;
+  background: #1400a0;
+  color: white;
+  margin: 1em 0 .3em;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003122}}
+.node-readmore a:hover, .print_html a:hover, .print_mail a:hover {
+  background-color: #107fc9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003126}}
+.print_html {
+  clear: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003129}}
+a.node-readmore {
+  padding: .4em 1em;
+  background: #1400a0;
+  color: white;
+  margin: 0 0 .3em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003137}}
+li.node-readmore, li.node-readmore a {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003140}}
+a.node-readmore:hover {
+  background-color: #107fc9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003143}}
+.submitted, .views-field-field-datum, .field-name-field-datum {
+  clear: both;
+  color: #383838;
+  display: block;
+  font-size: 0.8em;
+}
+
+/* Blocks */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003152}}
+aside .block {
+  background: #dfebff;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003157}}
+aside .block:last-child, #block-block-1 p:last-child {
+  margin-bottom: 0;
+}
+
+/* Social Media Share Links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003162}}
+.field--name-field-socialshareprivacy {
+  float: right;
+  min-width: 150px;
+  width: 40%;
+  max-width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003168}}
+.social_share_privacy_area li {
+  height: auto;
+}
+
+/* Search Block */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003173}}
+.search-block-form {
+  padding: 1.5em .6em 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003175}}
+.search-block-form .form-text {
+  font-size: 1em;
+  height: 34px;
+  max-width: 135px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003180}}
+.search-block-form .form-submit {
+  padding: .45em .5em;
+  color: white;
+  background: #1400a0;
+  border: 0;
+}
+
+/* Submit buttons */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003189}}
+.form-submit {
+  padding: .5em 1em;
+  margin-right: .5em;
+  color: white;
+  background: #1400a0;
+  border: 0;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003197}}
+.form-submit:hover {
+  cursor: pointer;
+  background-color: #107fc9;
+  color: white;
+}
+
+/* Social Media Block */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003204}}
+.twitters {
+  background: url(../images/twitter.png) no-repeat;
+  padding-left: 35px;
+  height: 26px;
+  line-height: 26px;
+  display: block;
+  margin: .5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003212}}
+.facebooks {
+  background: url(../images/facebook.png) no-repeat;
+  padding-left: 35px;
+  height: 29px;
+  line-height: 29px;
+  display: block;
+  margin: .5em 0;
+}
+
+/* Slideshow */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003223}}
+#views-nivo-slider-featured_slideshow-block .views-more-link {
+  margin: 10px 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003227}}
+.slideshow_caption {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  font-size: 10px;
+  color: #444;
+  display: block;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003237}}
+body #block-views-featured-slideshow-block {
+  border: 0px solid #20922D;
+  border-top: 0;
+  padding: 0 !important;
+  background-color: #fff !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003244}}
+body #views-nivo-slider-featured_slideshow-block {
+  width: 100% !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003247}}
+#block-views-featured-slideshow-block h2 a {
+  /*color:#20922D;*/
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003252}}
+.nivo-caption {
+  /*bottom: 0;
+  color: #0C3310;*/
+  /*left: 0;
+  opacity: 1;
+  position:absolute;
+  right: 0;
+  top: 0;
+  height:100%;
+  left: auto !important;
+  bottom: auto !important;
+  width: 45%;
+  z-index: 8;
+  color: $text_color;*/
+  background: #fff;
+  color: #3f3f3f;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003269}}
+.nivo-caption > p {
+  padding: 1em 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003271}}
+.nivo-caption > p p {
+  line-height: 1.4;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003277}}
+.nivo-caption h2 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003283}}
+.theme-default .nivo-caption a {
+  color: #3f3f3f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003286}}
+.nivo-directionNav a {
+  display: block;
+  background: #1400a0;
+  opacity: .7;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out 0s;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003297}}
+.nivo-directionNav a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003301}}
+a.nivo-prevNav {
+  padding: .1em .4em .15em .3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003305}}
+a.nivo-nextNav {
+  padding: .1em .3em .15em .4em;
+}
+
+/* Print Form */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003311}}
+.print-mail-form #edit-txt-to-addrs {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003314}}
+.print-mail-form .form-item input {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/_components\.scss}line{font-family:\00003317}}
+.print-mail-form .form-item .description {
+  display: inline-block;
+  margin-bottom: 1em;
+}

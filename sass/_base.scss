@@ -1,0 +1,116 @@
+/*******************************************************************************
+<<<<<<< HEAD
+ * _base.scss
+ *
+ * Base styles define the default look for HTML and common Drupal elements.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common Drupal elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupal's common elements for styling. By setting a solid baseline
+=======
+ * _base.scss
+
+ * Base styles define the default look for HTML and common Drupal elements.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common Drupal elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupals common elements for styling. By setting a solid baseline
+>>>>>>> sandbox/7.x-4.x
+ * before adding any more specific customisations you ensure that as any new
+ * features are added they will be correctly styled without any extra work.
+ ******************************************************************************/
+
+body {
+    line-height: 1.625;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $text_color;
+    /* http://www.flickr.com/photos/patdami/9261365287/sizes/o/ */
+   /* background: url(../images/blue.jpg) bottom left no-repeat $body;*/
+    background: $body;
+}
+a {
+    text-decoration: none;
+    color: $link_color;
+}
+a:hover {
+    color:$hover_color;
+}
+a img {
+  border: 0;
+}
+
+p {
+@include line-break;
+}
+strong, h1, h2, h3, h4, h5, h6 {
+    font-weight:600;
+}
+.pane-unfairtobacco-feed strong {
+    font-weight:normal;
+}
+
+h1 {
+    font-size:2em;
+    line-height:1.21875;
+    color:$header_color;
+}
+h2 {
+    font-size: 1.5em;
+    line-height: 1.0833;
+    color:$header_color;
+}
+
+h3 {
+    font-size: 1.17em;
+    color:$header_color;
+}
+h5 {
+    font-size: .83em;
+}
+h6 {
+    font-size: .75em;
+}
+.front h2.title {
+    margin-bottom:.3em;
+}
+h2.pane-title {
+    text-align:center;
+}
+h2.block__title {
+    margin:0;
+}
+
+/* Block elements */
+header, hgroup, footer, section, article, aside {
+  display: block;
+}
+.block--menu {
+    ul {
+    padding:0;
+    margin:1.4em .6em 0;
+    float:right;
+    }
+    li {
+        list-style:none !important;
+        float:left;
+        margin: 0 0 2.2em 0;
+        a {
+        padding:1em;
+        text-decoration: none;
+        margin-right:1px;
+        background:$grey;
+        font-weight:600;
+        text-transform: uppercase;
+        }
+        a:hover, a.active {
+        background-color: $background_color;
+        color: $white;
+        }
+    }
+}

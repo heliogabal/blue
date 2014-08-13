@@ -1,0 +1,135 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * The layout of the major regions (usually, but not necessarily Drupal regions)
+ * that components will be placed within. Layout styles for the theme's
+ * components should not be placed here and should instead be kept with the
+ * relevant SCSS for that component.
+ ******************************************************************************/
+
+.l-page {
+    max-width: 1100px;
+    margin:3em auto;
+    background:$white;
+}
+.l-header, .l-main, l-footer {
+    padding:1em;
+    margin-bottom:0;
+}
+.l-region--header {
+    width:auto;
+}
+.l-branding {
+    width:250px;
+    img {
+        margin:0;
+    }
+}
+.l-main {
+    padding:0 1.5em 1.5em;
+}
+.block--menu ul {
+    margin:1.4em .6em 0 0;
+}
+.l-region--sidebar-first, .l-region--sidebar-second {
+    margin-bottom:0;
+}
+
+/*#search-block-form {
+    float:right;
+}
+#socialshareprivacy-block {
+    float:left;
+}*/
+
+/* Startseite */
+.panel-2col-stacked .panel-col-first .inside{
+    margin: 0 1em 0 0;
+}
+.panel-2col-stacked .panel-col-last .inside {
+    margin: 0;
+}
+
+.panel-2col-stacked .views-row:last-child {
+    margin-bottom:0;
+}
+
+@media screen and (max-device-width:640px) {
+    body {
+        margin:0;
+    }
+    .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
+        margin: 0 auto;
+        width:100%;
+    }
+    .l-main {
+        padding:0;
+        margin: .5em .5em 0 .5em;
+    }
+    .l-header {
+        margin:0 .5em .5em;
+        padding:1em 0 0;
+    }
+    .l-branding {
+        width:100%;
+        text-align: center;
+    }
+    aside .block:last-child {
+        margin-bottom: 1em !important;
+    }
+    .panel-2col-stacked .panel-col-first {
+        float: none;
+        width: 100%;
+    }
+    .panel-2col-stacked .panel-col-first .inside {
+        margin: 0;
+    }
+    .panel-2col-stacked .panel-col-last {
+        float: none;
+        width: 100%;
+    }
+        .panel-2col-stacked .panel-col-last .inside {
+        margin: 0;
+    }
+    .panel-2col-stacked .views-row:last-child {
+        margin-bottom:1.5em;
+    }
+}
+@media screen and (min-device-width:641px) and (max-device-width:767px) {
+        .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
+        margin: 0 auto;
+        width:100%;
+    }
+    .l-region--header {
+        float:left;
+    }
+    .panel-2col-stacked .panel-col-first, .panel-2col-stacked .panel-col-last  {
+        float: left;
+        width: 50%;
+    }
+    aside .block {
+        width:48%;
+        margin:1em 2% 0 0 !important;
+        float:left;
+    }
+}
+@media screen and (min-width:768px) {
+    .sidebar-first .l-content,
+    .sidebar-second .l-content,
+    .two-sidebars .l-content {
+        width: 76.1017%;
+    }
+    .sidebar-first .l-region--sidebar-first,
+    .sidebar-first .l-region--sidebar-second,
+    .sidebar-second .l-region--sidebar-first,
+    .sidebar-second .l-region--sidebar-second,
+    .two-sidebars .l-region--sidebar-first,
+    .two-sidebars .l-region--sidebar-second {
+        width: 22.2034%;
+    }
+}
+@media screen and (max-width:1050px) {
+    body {
+        font-size:14px !important;
+    }
+}
