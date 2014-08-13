@@ -44,10 +44,13 @@
 
   .l-branding {
     width: 250px;
+    float: left;
   }
 
   .l-region--header {
     width: auto;
+    float: right;
+    margin-right: 0;
   }
 
   .l-region--navigation {
@@ -87,10 +90,13 @@
 
   .l-branding {
     width: 250px;
+    float: left;
   }
 
   .l-region--header {
     width: auto;
+    float: right;
+    margin-right: 0;
   }
 
   .sidebar-first .l-content {
