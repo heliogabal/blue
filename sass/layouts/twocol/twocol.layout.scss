@@ -31,6 +31,7 @@ $desk: 70em 16; // At 70em use 16 columns.
   @include container; // Define these elements as the grid containers.
   // @include susy-grid-background; // Show the columns for debugging.
   margin-bottom: $vert-spacing-unit;
+  padding: 0 1rem;
 }
 
 .l-region--highlighted,
