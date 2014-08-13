@@ -97,7 +97,6 @@ $desk: 70em 16; // At 70em use 16 columns.
       @include span-columns(4, 16); // Span 4 out of 16 columns.
     }
   }
-  .sidebar-second {
     .l-content {
       @include span-columns(12, 16); // Span 12 out of 16 columns.
     }
@@ -105,7 +104,6 @@ $desk: 70em 16; // At 70em use 16 columns.
       @include span-columns(4 omega, 16); // Span the last (omega) 12 columns of 16.
       clear: none;
     }
-  }
 
   .two-sidebars {
     .l-content {
