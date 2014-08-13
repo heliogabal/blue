@@ -8,31 +8,31 @@
  ******************************************************************************/
 
 .l-page {
-    max-width: 1100px;
-    margin:3em auto;
+    max-width: 1200px;
+    margin: 3em auto;
     background:$white;
 }
 .l-header, .l-main, l-footer {
-    padding:1em;
-    margin-bottom:0;
+    padding: 1em;
+    margin-bottom: 0;
 }
 .l-region--header {
-    width:auto;
+    width: auto;
 }
 .l-branding {
-    width:250px;
+    width: 250px;
     img {
-        margin:0;
+        margin: 0;
     }
 }
 .l-main {
-    padding:0 1.5em 1.5em;
+    padding: 0 1.5em 1.5em;
 }
 .block--menu ul {
-    margin:1.4em .6em 0 0;
+    margin: 1.4em .6em 0 0;
 }
 .l-region--sidebar-first, .l-region--sidebar-second {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 /*#search-block-form {
@@ -60,7 +60,7 @@
     }
     .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
         margin: 0 auto;
-        width:100%;
+        width: 100%;
     }
     .l-main {
         padding:0;
@@ -68,10 +68,10 @@
     }
     .l-header {
         margin:0 .5em .5em;
-        padding:1em 0 0;
+        padding: 1em 0 0;
     }
     .l-branding {
-        width:100%;
+        width: 100%;
         text-align: center;
     }
     aside .block:last-child {
@@ -98,10 +98,10 @@
 @media screen and (min-device-width:641px) and (max-device-width:767px) {
         .l-page, .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-content, .sidebar-second .l-content, .two-sidebars .l-content, .sidebar-first .l-region--sidebar-first, .sidebar-first .l-region--sidebar-second, .sidebar-second .l-region--sidebar-first, .sidebar-second .l-region--sidebar-second, .two-sidebars .l-region--sidebar-first, .two-sidebars .l-region--sidebar-second {
         margin: 0 auto;
-        width:100%;
+        width: 100%;
     }
     .l-region--header {
-        float:left;
+        float: left;
     }
     .panel-2col-stacked .panel-col-first, .panel-2col-stacked .panel-col-last  {
         float: left;
@@ -109,8 +109,8 @@
     }
     aside .block {
         width:48%;
-        margin:1em 2% 0 0 !important;
-        float:left;
+        margin: 1em 2% 0 0 !important;
+        float: left;
     }
 }
 @media screen and (min-width:768px) {
@@ -130,6 +130,6 @@
 }
 @media screen and (max-width:1050px) {
     body {
-        font-size:14px !important;
+        font-size: 14px !important;
     }
 }

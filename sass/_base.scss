@@ -20,6 +20,8 @@ body {
     /* http://www.flickr.com/photos/patdami/9261365287/sizes/o/ */
    /* background: url(../images/blue.jpg) bottom left no-repeat $body;*/
     background: $body;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -31,7 +33,6 @@ a:hover {
 a img {
   border: 0;
 }
-
 p {
 @include line-break;
 }
@@ -41,7 +42,6 @@ strong, h1, h2, h3, h4, h5, h6 {
 .pane-unfairtobacco-feed strong {
     font-weight:normal;
 }
-
 h1 {
     font-size:2em;
     line-height:1.21875;
@@ -52,7 +52,6 @@ h2 {
     line-height: 1.0833;
     color:$header_color;
 }
-
 h3 {
     font-size: 1.17em;
     color:$header_color;
