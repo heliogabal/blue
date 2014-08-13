@@ -1,61 +1,168 @@
-/*
-Syntax error: Undefined mixin 'at-breakpoint'.
-        on line 43 of /home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss, in `at-breakpoint'
-        from line 43 of /home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss
+/*******************************************************************************
+ * _layout.scss
+ *
+ * Styling of the "twocol" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000328}}
+.l-header,
+.l-main,
+.l-footer {
+  *zoom: 1;
+  max-width: 1190px;
+  max-width: 74.375rem;
+  _width: 1190px;
+  padding-left: 5px;
+  padding-left: 0.3125rem;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.l-header:after,
+.l-main:after,
+.l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-Backtrace:
-/home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss:43:in `at-breakpoint'
-/home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss:43
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/compiler.rb:24:in `compile'
-/usr/lib/ruby/1.9.1/forwardable.rb:201:in `compile'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/watch_project.rb:47:in `perform'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-1.0.0.alpha.19/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'at-breakpoint'.\A         on line 43 of /home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss, in `at-breakpoint'\A         from line 43 of /home/rainer/Arbeit/BLUE21/themes/blue/sass/layouts/twocol/twocol.layout.scss"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000336}}
+.l-region--highlighted,
+.l-region--help,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000344}}
+  .l-header,
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+    max-width: 74.375rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000351}}
+  .l-branding {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000354}}
+  .l-region--header {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000357}}
+  .l-region--navigation {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000364}}
+  .sidebar-first .l-content,
+  .sidebar-second .l-content,
+  .two-sidebars .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000367}}
+  .sidebar-first .l-region--sidebar-first,
+  .sidebar-first .l-region--sidebar-second,
+  .sidebar-second .l-region--sidebar-first,
+  .sidebar-second .l-region--sidebar-second,
+  .two-sidebars .l-region--sidebar-first,
+  .two-sidebars .l-region--sidebar-second {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000371}}
+  .sidebar-first .l-region--sidebar-second,
+  .sidebar-second .l-region--sidebar-second,
+  .two-sidebars .l-region--sidebar-second {
+    clear: right;
+  }
+}
+@media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000378}}
+  .l-header,
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+    max-width: 74.375rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000385}}
+  .l-branding {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000388}}
+  .l-region--header {
+    width: 62.02532%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000393}}
+  .sidebar-first .l-content {
+    width: 74.68354%;
+    float: right;
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\0000396}}
+  .sidebar-first .l-region--sidebar-first {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003101}}
+  .sidebar-second .l-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003104}}
+  .sidebar-second .l-region--sidebar-second {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003111}}
+  .two-sidebars .l-content {
+    width: 49.36709%;
+    float: left;
+    margin-right: 1.26582%;
+    margin-left: 25.31646%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003115}}
+  .two-sidebars .l-region--sidebar-first,
+  .two-sidebars .l-region--sidebar-second {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003119}}
+  .two-sidebars .l-region--sidebar-first {
+    margin-left: -75.94937%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/rainer\/Arbeit\/BLUE21\/themes\/blue\/sass\/layouts\/twocol\/twocol\.layout\.scss}line{font-family:\00003122}}
+  .two-sidebars .l-region--sidebar-second {
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+}
