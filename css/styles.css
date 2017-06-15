@@ -52,22 +52,27 @@ body {
   color: #3f3f3f;
   /* http://www.flickr.com/photos/patdami/9261365287/sizes/o/ */
   /* background: url(../images/blue.jpg) bottom left no-repeat $body;*/
-  background: #c2d4ec;
+  background: #C2D4EC;
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: #1400a0;
+  color: #1400A0;
 }
 
 a:hover {
-  color: #107fc9;
+  color: #107FC9;
 }
 
 a img {
   border: 0;
+}
+
+.field-name-field-titelbild a img {
+  float: left;
+  margin: 1em 1em -.2em 0;
 }
 
 p {
@@ -155,8 +160,8 @@ header, hgroup, footer, section, article, aside {
   text-transform: uppercase;
 }
 .block--menu li a:hover, .block--menu li a.active {
-  background-color: #1400a0;
-  color: white;
+  background-color: #1400A0;
+  color: #fff;
 }
 
 /*******************************************************************************
@@ -170,7 +175,7 @@ header, hgroup, footer, section, article, aside {
 .l-page {
   max-width: 1200px;
   margin: 3em auto;
-  background: white;
+  background: #fff;
 }
 
 .l-header, .l-main, l-footer {
@@ -410,6 +415,10 @@ header, hgroup, footer, section, article, aside {
   float: left;
 }
 
+.field--name-field-beschreibung {
+  clear: left;
+}
+
 .pane-unfairtobacco-feed .caption p {
   display: none;
 }
@@ -440,13 +449,13 @@ header, hgroup, footer, section, article, aside {
 }
 .node-readmore a, .print_html a, .print_mail a {
   padding: .4em 1em;
-  background: #1400a0;
-  color: white;
+  background: #1400A0;
+  color: #fff;
   margin: 1em 0 .3em;
   text-transform: uppercase;
 }
 .node-readmore a:hover, .print_html a:hover, .print_mail a:hover {
-  background-color: #107fc9;
+  background-color: #107FC9;
 }
 
 .print_html {
@@ -455,8 +464,8 @@ header, hgroup, footer, section, article, aside {
 
 a.node-readmore {
   padding: .4em 1em;
-  background: #1400a0;
-  color: white;
+  background: #1400A0;
+  color: #fff;
   margin: 0 0 .3em;
   display: inline-block;
   text-transform: uppercase;
@@ -467,7 +476,7 @@ li.node-readmore, li.node-readmore a {
 }
 
 a.node-readmore:hover {
-  background-color: #107fc9;
+  background-color: #107FC9;
 }
 
 .submitted, .views-field-field-datum, .field-name-field-datum {
@@ -479,7 +488,7 @@ a.node-readmore:hover {
 
 /* Blocks */
 aside .block {
-  background: #dfebff;
+  background: #DFEBFF;
   margin-bottom: 1em;
   padding: 1em;
 }
@@ -511,8 +520,8 @@ aside .block:last-child, #block-block-1 p:last-child {
 }
 .search-block-form .form-submit {
   padding: .45em .5em;
-  color: white;
-  background: #1400a0;
+  color: #fff;
+  background: #1400A0;
   border: 0;
 }
 
@@ -520,16 +529,16 @@ aside .block:last-child, #block-block-1 p:last-child {
 .form-submit {
   padding: .5em 1em;
   margin-right: .5em;
-  color: white;
-  background: #1400a0;
+  color: #fff;
+  background: #1400A0;
   border: 0;
   text-transform: uppercase;
 }
 
 .form-submit:hover {
   cursor: pointer;
-  background-color: #107fc9;
-  color: white;
+  background-color: #107FC9;
+  color: #fff;
 }
 
 /* Social Media Block */
@@ -619,7 +628,7 @@ body #views-nivo-slider-featured_slideshow-block {
 
 .nivo-directionNav a {
   display: block;
-  background: #1400a0;
+  background: #1400A0;
   opacity: .7;
   color: #fff;
   text-transform: uppercase;
