@@ -33,10 +33,16 @@ a:hover {
 a img {
   border: 0;
 }
-.field-name-field-titelbild a img {
+.field-name-field-titelbild a img,
+.floatleft img {
 	float: left;
-	margin: 1em 1em -.2em 0;
+	margin: 1em 1em -.1em 0 !important;
 }
+.view-unfairtobacco-feed .views-row p:first-of-type,
+.view-foodjustice-feed .views-row p:first-of-type {
+    margin-top: 0.6em;
+}
+
 p {
 @include line-break;
 }
