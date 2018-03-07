@@ -92,7 +92,8 @@
 .field--name-field-beschreibung {
 	clear: left;
 }
-.pane-unfairtobacco-feed .caption p {
+.pane-unfairtobacco-feed .caption p,
+.pane-unfairtobacco-feed .views-row p:last-of-type {
     display:none;
 }
 .left {

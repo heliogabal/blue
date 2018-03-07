@@ -425,7 +425,8 @@ header, hgroup, footer, section, article, aside {
   clear: left;
 }
 
-.pane-unfairtobacco-feed .caption p {
+.pane-unfairtobacco-feed .caption p,
+.pane-unfairtobacco-feed .views-row p:last-of-type {
   display: none;
 }
 
